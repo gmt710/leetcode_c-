@@ -1,4 +1,4 @@
-# 加速
+# 加速   
 static const auto io_sync_off = []()
 {
     // turn off sync
