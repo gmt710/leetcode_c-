@@ -15,6 +15,8 @@ static int x = [](){
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
+        // python 100ms
+        // c++ 8ms
         vector<int> q;
         // 如果链表为空或者只有一个元素，则必定为回文链表
         if (head == NULL || head->next == NULL)
@@ -25,9 +27,9 @@ public:
             head = head->next;
         }
         for(int i=0; i < q.size()/2 ; i++){
-            //如果正数i位置的数与倒数i位置的数相等
+            // 如果正数i位置的数与倒数i位置的数相等
             if(q[i] == q[q.size()-i-1]){
-                //如果i到了一半位置
+                // 如果i到了一半位置
                 if(i == q.size()/2-1)
                     return true;
             }
