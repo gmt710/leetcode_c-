@@ -7,6 +7,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+// python 40ms
+// c++ 4ms
 static int x = [](){
     ios::sync_with_stdio(false);
     cin.tie(NULL);
